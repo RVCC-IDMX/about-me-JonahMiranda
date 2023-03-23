@@ -40,8 +40,9 @@ header {
 /*Images*/
 
 #gallery img {
-    width: 200px;
-    height: 200px;
+    width: 50vw;
+    max-width: 100%;
+    min-width: 100px;
 }
 /* Biography */
 
@@ -100,6 +101,26 @@ header {
 }
 
 
+#videoWrapper {
+    position:relative;
+    padding-bottom: 56.25%;
+    /* Aspect ratios:
+        100% for 1:1
+        75% for 4:3
+        56.25% for 16:9
+    */
+}
+
+#video iframe {
+    display: block;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+
+
 /* Media Queries*/ 
 
 @media screen and (min-width: 768px) {
@@ -125,19 +146,20 @@ header {
 
 @media screen and (min-wdith:1200px){
 
-#gallery {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    #gallery {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
 
-}
-#gallery hr {
+    }
+    #gallery hr {
 
-    display:none;
-}
-#gallery h2 {
-    grid-column:1/-1;
-}  
-#gallery figure {
-    display:block;
-}  
+        display:none;
+    }
+    #gallery h2 {
+        grid-column:1/-1;
+    }  
+    #gallery figure {
+        display:block;
+    }  
+
 }
