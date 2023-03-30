@@ -140,9 +140,11 @@ footer {
 }
 
 #contact fieldset {
-    border: 2px solid #3c87fa;
+    border: 3px solid #3c87fa;
     padding: 1em;
     border-radius: 1em;
+    display: grid;
+    margin-top: 1ex;
 }
 
 #contact legend {
@@ -153,18 +155,21 @@ footer {
     border-top-left-radius: 1ex;
 }
 
-#contact fieldset {
-    display: grid;
-    margin-top:1ex;
-}
 
 #contact label {
-    margin:1ex;
+    margin: 1ex;
 }
 
 #contact fieldset fieldset {
     grid-template-columns: 30px auto;
+    margin-top: 30px;
 }
+
+#contact button {
+    margin-top: 20px;
+}
+
+
 
 
 
