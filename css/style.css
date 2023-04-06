@@ -167,14 +167,15 @@ footer {
 
 #contact button {
     margin-top: 20px;
-    border: 5px outset grey;
+    border: 5px outset #73a7f7;
+    color: #3c87fa;
+    font-weight: bold;
 }
 
-
-
-
-
-
+#contact button:hover {
+    background-color: #3c87fa;
+    color: white;
+}
 
 
 /* Media Queries */
