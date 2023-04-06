@@ -76,7 +76,8 @@ main {
 }
 
 .navbar-links a:hover, .navbar-links a:focus {
-    filter: invert(1);
+    /*filter: invert(1);*/
+    color: orange;
     border-radius: 10px;
 }
 
