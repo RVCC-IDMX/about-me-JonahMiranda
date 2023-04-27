@@ -97,9 +97,6 @@ footer {
     text-align: left;
 }
 
-#hobbies ul li:nth-child(even) {
-    color: rgb(255, 0, 0);
-}
 
 /* Lit Section */
 #lit p:nth-child(odd)::first-letter {
@@ -162,7 +159,7 @@ footer {
     border-radius: 1em;
     display: grid;
     margin-top: 1ex;
-    background-color: black;
+    background-color: rgb(17, 22, 89);
     color: white;
 }
 
