@@ -53,13 +53,74 @@ footer {
 
     background-color: #000000;
     border-radius: 3vw;
+    
+}
+
+figure {
+    border-radius: 3vw;;
     box-shadow: 15px 15px 5px rgb(17, 22, 89) inset,
                 15px 15px 5px rgba(0, 0, 0, .5);
 }
 
+/*
 #gallery figcaption {
-    margin-top: 15px;
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255 , 255, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}*/
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
 }
+
+.img-wrapper > img {
+    display:block;
+}
+
+.img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255 , 255, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3vw;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper > .content.fade {
+    opacity:0;
+}
+.img-wrapper:hover > .content.fade {
+    opacity:1;
+}
+
+/*
+#gallery figure, 
+#gallery figcaption {
+    transition: 200ms ease-in-out;
+}
+
+#gallery figure:hover > .content.fade {
+    opacity: 1;
+}*/
+
+
+
+
 
 /* Biography */
 
