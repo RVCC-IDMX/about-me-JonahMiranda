@@ -1,7 +1,7 @@
 body {
     color: rgb(255, 255, 255);
     background-color: rgb(17, 22, 89);
-    font-family: 'Anton', sans-serif;
+    font-family: 'Trirong', serif;
 }
 
 h1,
@@ -10,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Stardos Stencil', cursive;
     font-size: 40pt;
 }
 
@@ -200,7 +200,7 @@ figure {
 }
 
 #video figcaption {
-    margin-top: 10px;
+    
     text-align: center;
 }
 
