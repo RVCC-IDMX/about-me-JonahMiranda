@@ -58,7 +58,7 @@ footer {
     
 }
 
-figure {
+#gallery figure {
     border-radius: 3vw;;
     box-shadow: 15px 15px 5px rgb(17, 22, 89) inset,
                 15px 15px 5px rgba(0, 0, 0, .5);
