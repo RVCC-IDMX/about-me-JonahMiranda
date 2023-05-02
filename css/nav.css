@@ -87,7 +87,25 @@ hr {
     border-radius: 10px;
 } 
 
-
+/* Toggle CSS */
+#toggle {
+    display:none;
+}
+.navbar-links {
+    display:none;
+}
+#toggle:checked ~ .navbar-links {
+    display:block;
+}
+label .close {
+    display:none;
+}
+#toggle:checked ~ label .close {
+    display:block;
+}
+#toggle:checked ~ label .open {
+    display:none;
+}
 
 
 /* 
