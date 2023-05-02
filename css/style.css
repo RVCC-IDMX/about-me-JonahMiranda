@@ -12,6 +12,8 @@ h5,
 h6 {
     font-family: 'Stardos Stencil', cursive;
     font-size: 40pt;
+    text-align: center;
+    padding-top: 40pt;
 }
 
 header {
@@ -160,22 +162,102 @@ figure {
 
 
 /* Lit Section */
-#lit p:nth-child(odd)::first-letter {
-    color: black;
-    font-size: 230%;
-    padding: 0.5ex;
-    margin-right: .5ex;
-    font-weight: bold;
-    background-color: white;
-    text-shadow: 2px 2px;
-    box-shadow: 3px 3px;
-    border-top-left-radius: 45%;
-}
 
-#lit {
-    text-align: left;
-    margin: 3em;
-}
+@font-face {
+    src: url("https://www.axis-praxis.org/fonts/webfonts/AvenirNext_Variable.woff2") format("woff2");
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .text {
+    font-variation-settings: "wght" 400, "wdth" 100;
+    font-size: 5em;
+    text-align: center;
+    position:relative;
+    animation: text-flow 3s infinite;
+    margin-bottom: 50px;
+    margin-top: 120px;
+  }
+  
+  .text:nth-child(1) {
+    animation-delay: 0.5s;
+    opacity: 0.9;
+    -webkit-text-stroke: 3px #fc00f4;
+    z-index: 0;
+  }
+  
+  .text:nth-child(2) {
+    animation-delay: 1s;
+    opacity: 0.8;
+    -webkit-text-stroke: 3px #21e257;
+    z-index: -1;
+  }
+  
+  .text:nth-child(3) {
+    animation-delay: 1.25s;
+    opacity: 0.7;
+    -webkit-text-stroke: 3px #fff12b;
+    z-index: -2;
+  }
+  
+  .text:nth-child(4) {
+    animation-delay: 1.75s;
+    opacity: 0.6;
+    -webkit-text-stroke: 3px #ff002f;
+    z-index: -3;
+  }
+  
+  .text:nth-child(5) {
+    animation-delay: 2.25s;
+    opacity: 0.5;
+    -webkit-text-stroke: 3px #0fff1b;
+    z-index: -4;
+  }
+  
+  .text:nth-child(6) {
+    animation-delay: 2.75s;
+    opacity: 0.4;
+    -webkit-text-stroke: 3px #f104e9;
+    z-index: -5;
+  }
+  
+  .text:nth-child(7) {
+    animation-delay: 3.25s;
+    opacity: 0.3;
+    -webkit-text-stroke: 3px #0800f9;
+    z-index: -6;
+  }
+  
+  .text:nth-child(8) {
+    animation-delay: 4s;
+    opacity: 0.2;
+    -webkit-text-stroke: 3px #24d3ff;
+    z-index: -7;
+  }
+  
+  .text:nth-child(9) {
+    animation-delay: 4.75xs;
+    opacity: 0.1;
+    -webkit-text-stroke: 3px #fc00f4;
+    z-index: -8;
+  }
+  
+  @keyframes text-flow {
+    25% {
+      font-variation-settings: "wght" 900, "wdth" 100;
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      transform: translateY(-100px);
+      font-variation-settings: "wght" 400, "wdth" 100;
+    }
+    75% {
+      transform: translateY(0%);
+      font-variation-settings: "wght" 900, "wdth" 100;
+      filter: hue-rotate(90deg);
+    }
+  }
 
 /*Video Style */
 
