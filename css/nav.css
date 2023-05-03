@@ -19,13 +19,13 @@ body {
 /* add some padding back to rest of page */
 
 main {
-    padding:2vw;
+    padding: 2vw;
 }
-  
+
 /* navbar */
 .navbar {
     background-color: rgb(0, 0, 0);
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,8 +42,9 @@ hr {
     display: flex;
     align-items: center;
 }
+
 .logo img {
-    height:8vw;
+    height: 8vw;
     width: 10vw;
 }
 
@@ -59,10 +60,10 @@ hr {
 
 .navbar-links li {
     list-style: none;
-    display:block;
+    display: block;
     padding: 0.5em 0px;
-    margin:0px;
-    width:170px;
+    margin: 0px;
+    width: 170px;
 }
 
 /*  
@@ -77,34 +78,40 @@ hr {
     padding: 1rem 1.25rem;
     letter-spacing: 2px;
     text-decoration: none;
-    display:inline-block;
-    
+    display: inline-block;
+
 }
 
-.navbar-links a:hover, .navbar-links a:focus {
+.navbar-links a:hover,
+.navbar-links a:focus {
     /*filter: invert(1);*/
     color: rgb(255, 0, 0);
     border-radius: 10px;
-} 
+}
 
 /* Toggle CSS */
 #toggle {
-    display:none;
+    display: none;
 }
+
 .navbar-links {
-    display:none;
+    display: none;
 }
-#toggle:checked ~ .navbar-links {
-    display:block;
+
+#toggle:checked~.navbar-links {
+    display: block;
 }
+
 label .close {
-    display:none;
+    display: none;
 }
-#toggle:checked ~ label .close {
-    display:block;
+
+#toggle:checked~label .close {
+    display: block;
 }
-#toggle:checked ~ label .open {
-    display:none;
+
+#toggle:checked~label .open {
+    display: none;
 }
 
 
@@ -114,42 +121,73 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 @media screen and (min-width:1000px) {
-    
+
     .navbar {
-        
+
         flex-direction: row;
         justify-content: space-between;
 
     }
+
     .navbar ul li {
-        display:inline-block;
+        display: inline-block;
     }
 
     .navbar-links hr {
-        width:170px;
-        height:3px;
+        width: 170px;
+        height: 3px;
         background-color: rgb(255, 0, 0);
-        border:none;
-        margin:0px;
-        transition:.3s ease-in-out;
-        
+        border: none;
+        margin: 0px;
+        transition: .3s ease-in-out;
+
     }
-    .navbar-links ul li:nth-child(2):hover ~ hr {
-        margin-left:170px;
+
+    .navbar-links ul li:nth-child(2):hover~hr {
+        margin-left: 170px;
     }
-    .navbar-links ul li:nth-child(3):hover ~ hr {
-        margin-left:350px;
+
+    .navbar-links ul li:nth-child(3):hover~hr {
+        margin-left: 350px;
     }
-    .navbar-links ul li:nth-child(4):hover ~ hr {
-        margin-left:525px;
+
+    .navbar-links ul li:nth-child(4):hover~hr {
+        margin-left: 525px;
     }
-    .navbar-links ul li:nth-child(5):hover ~ hr {
-        margin-left:695px;
+
+    .navbar-links ul li:nth-child(5):hover~hr {
+        margin-left: 695px;
     }
 
     hr {
         display: block;
     }
+
+    .navbar-links {
+        display: block;
+    }
+
+    #toggle:checked~.navbar-links {
+        display: block;
+    }
+
+    label .open {
+        display: none;
+    }
+
+    label .close {
+        display: none;
+    }
+
+    #toggle:checked~label .close {
+        display: none;
+    }
+
+    #toggle:checked~label .open {
+        display: none;
+    }
+
+
     /*
     .navbar ul {
         display:flex;
